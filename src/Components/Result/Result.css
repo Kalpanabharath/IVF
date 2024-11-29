@@ -108,7 +108,7 @@
     display: none;
   }
   .Result h3 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .Result h3 img {
     width: 40px;
