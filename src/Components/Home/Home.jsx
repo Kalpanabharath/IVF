@@ -87,7 +87,7 @@ const Home = () => {
     // Store the success rate in the context
     setSuccessRate(successRate);
 
-    navigate("/result"); // Navigate to the /result route
+    navigate("/IVF/result "); // Navigate to the /result route
   };
 
   return (
