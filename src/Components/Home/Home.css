@@ -1,7 +1,7 @@
 /* General Container */
 .home-container {
   width: 100vw;
-  padding: 40px;
+
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
@@ -34,6 +34,7 @@
   color: #1e231e;
   margin-bottom: 20px;
   text-align: left;
+  padding-left: 20px;
 }
 .breadcrumb img {
   display: none;
@@ -208,8 +209,9 @@
     margin: 0 auto;
   }
   .home-container {
-    padding-top: 15%; /* Optimize padding for mobile */
-    text-align: left; /* Align content to the left */
+    padding-top: 10%; /* Optimize padding for mobile */
+    text-align: left;
+    padding: 10px; /* Align content to the left */
   }
   .breadcrumb img {
     display: inline-block;
@@ -228,6 +230,7 @@
     text-align: left; /* Align breadcrumb left */
     display: flex;
     align-items: center;
+    padding-left: 10px;
   }
 
   /* Form Group & Labels */
