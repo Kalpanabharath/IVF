@@ -70,36 +70,36 @@
   gap: 3%;
 }
 
-.Navibar .navbar-menu.open {
-  display: block; /* When the menu is open, it displays as block */
-  position: absolute;
-  background-color: #da8f8f;
-  top: 10vh;
-  right: 0;
-  width: 100vw;
-  height: fit-content;
-  z-index: 500;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(0); /* Slide in */
-}
-
-.Navibar .navbar-menu {
-  position: absolute;
-  top: 10vh;
-  right: 0;
-  width: 100vw;
-  background-color: #da8f8f;
-  height: fit-content;
-  transform: translateX(100%); /* Start off-screen */
-  transition: transform 0.3s ease-in-out; /* Smooth sliding */
-}
-
 .Navibar ul li {
   padding: 30px 0px;
   text-align: center;
 }
 
 @media (max-width: 768px) {
+  .Navibar .navbar-menu.open {
+    display: block; /* When the menu is open, it displays as block */
+    position: absolute;
+    background-color: #da8f8f;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    height: fit-content;
+    z-index: 500;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0); /* Slide in */
+  }
+
+  .Navibar .navbar-menu {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    background-color: #da8f8f;
+    height: fit-content;
+    transform: translateX(100%); /* Start off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth sliding */
+  }
+
   .Navibar button {
     display: none;
   }

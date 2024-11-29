@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const { setSuccessRate } = useContext(SuccessContext); // Get the setter from context
   const [ageRange, setAgeRange] = useState("Between 30 - 34");
-  const [ivfCycles, setIvfCycles] = useState(1);
+  const [ivfCycles, setIvfCycles] = useState(2);
   const [icsiProcedure, setIcsiProcedure] = useState(false);
   const [pgtTesting, setPgtTesting] = useState(false);
   const [medicalConditions, setMedicalConditions] = useState({
