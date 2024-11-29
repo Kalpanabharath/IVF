@@ -1,0 +1,123 @@
+.Navibar {
+  width: 100vw; /* Ensures the navbar spans the full width without overflow */
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%; /* Adds inner spacing without affecting total width */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included in total width */
+  overflow: visible; /* Prevents content from overflowing the navbar */
+  border-bottom: 1px solid #e6e3d2; /* Fixed the "10x" to "10px" for valid border size */
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  z-index: 100;
+}
+
+.logo {
+  width: 10vw;
+  min-width: 100px;
+  height: auto;
+}
+
+.Navibar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+  flex-wrap: nowrap;
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  overflow-x: hidden; /* Prevents horizontal overflow */
+  width: 70%;
+}
+
+.Navibar ul li {
+  list-style: none;
+  white-space: nowrap; /* Prevents text from breaking into a new line */
+  overflow: hidden; /* Prevents overflow on small screens */
+}
+
+.Navibar button {
+  display: inline-flex; /* Aligns content horizontally in a single line */
+  align-items: center; /* Centers text and image vertically */
+  justify-content: center; /* Ensures proper horizontal alignment */
+  gap: 0.5rem; /* Adds space between the text and the icon */
+  padding: 0.5rem 1rem; /* Adjusts button padding */
+  border: none; /* Removes default border */
+  background-color: #d75555; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Adds a pointer cursor for interactivity */
+  white-space: nowrap; /* Prevents text from wrapping */
+  font-family: "Poppins", sans-serif; /* Ensures consistent font style */
+  font-size: 16px; /* Adjust the font size */
+  border-radius: 6px;
+}
+
+.bunbuttion {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.Navibar .navbar-menu {
+  display: flex; /* Default is visible on larger screens */
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+
+.Navibar .navbar-menu.open {
+  display: block; /* When the menu is open, it displays as block */
+  position: absolute;
+  background-color: #da8f8f;
+  top: 10vh;
+  right: 0;
+  width: 100vw;
+  height: fit-content;
+  z-index: 500;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0); /* Slide in */
+}
+
+.Navibar .navbar-menu {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  width: 100vw;
+  background-color: #da8f8f;
+  height: fit-content;
+  transform: translateX(100%); /* Start off-screen */
+  transition: transform 0.3s ease-in-out; /* Smooth sliding */
+}
+
+.Navibar ul li {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Navibar button {
+    display: none;
+  }
+
+  .Navibar ul {
+    display: block; /* Hide the default nav list */
+  }
+
+  .Navibar .bunbuttion {
+    display: block; /* Display the hamburger button */
+  }
+
+  .Navibar {
+    height: auto; /* Adjust navbar height on mobile */
+    padding: 2% 2%; /* Decrease padding on mobile */
+  }
+
+  .logo {
+    width: 30%; /* Adjust logo size on mobile */
+  }
+}

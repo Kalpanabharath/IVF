@@ -1,0 +1,134 @@
+.Result {
+  background: radial-gradient(
+    circle 1700px at 80% 40%,
+    /* Move the circle 10% to the left */ rgb(56, 120, 69) 3%,
+    /* Dark color for the center */ rgb(48, 48, 48) 16%
+      /* Lighter green for the outer edge */
+  );
+
+  color: #fff; /* Text color on dark backgrounds */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  padding-top: 19vh;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+.Result > P {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 13% !important;
+}
+.Result p > :nth-child(2) {
+  font-weight: 550;
+}
+.Result h3 {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 500;
+}
+.Result h3 img {
+  margin-right: 20px;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#00cc66 0% 64%, #cccccc 64% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 20vw;
+  margin-top: 5vh;
+}
+
+.success-rate {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 10);
+  padding: 10px 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cycles-info {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #f6f2f2;
+  margin-left: 20% !important;
+  font-weight: 500;
+}
+.imagediv {
+  position: absolute;
+  width: 50vw;
+  height: 80vh;
+  top: 20%;
+  right: 0%;
+}
+.imagediv img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Result p img {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Result p img {
+    display: flex;
+    color: #fff;
+    margin-right: 5px;
+  }
+  .Result {
+    background: linear-gradient(
+      180deg,
+      rgba(48, 48, 48, 1),
+      rgba(56, 120, 69, 1)
+    );
+    padding-top: 10vh;
+  }
+  .Result p {
+    display: flex;
+  }
+  .Result p span {
+    display: none;
+  }
+  .Result h3 {
+    font-size: 12px;
+  }
+  .Result h3 img {
+    width: 40px;
+    height: 20px;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+  }
+  .imagediv {
+    width: 80%;
+    height: 40%;
+    top: 60%;
+    left: 10%;
+  }
+  .imagediv img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
